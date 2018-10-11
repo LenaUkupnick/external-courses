@@ -17,5 +17,5 @@ function countElements(arr) {
         }
     return [even, notEven, nulls];
 }
-console.log (countElements ([1,0]));
+
 module.exports = countElements;
