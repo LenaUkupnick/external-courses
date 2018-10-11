@@ -5,9 +5,9 @@ function compareElemens(array) {
       if (array[i] === array[i++]) {
         return true;
       }   
-    }
-
+      if (array[i] !== array[i++]) {
     return false;
+      }
   }
-
+}
   module.exports = compareElemens;
