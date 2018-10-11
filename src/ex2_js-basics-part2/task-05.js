@@ -1,4 +1,4 @@
-
+'use strict'
 var arr = [1, -100, 100];
 var max = 0;
 function maxElement(arr) {
