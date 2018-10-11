@@ -1,3 +1,4 @@
+'use strict'
 function typeofArguments(a) {
     if (typeof a === "number"){ 
         return "number";
