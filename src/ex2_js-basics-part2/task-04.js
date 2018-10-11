@@ -1,5 +1,6 @@
 'use strict'
 var i = 0;
+var array;
 function compareElemens(array) {
     for (i; i < array.length; i++) {
       if (array[i] === array[i++]) {
