@@ -2,7 +2,7 @@
 var i = 0;
 function compareElemens(array) {
     for (i; i < array.length; i++) {
-      if (array[i] !== array[i+1]) {
+      if (array[1] !== array[0]) {
         return false;
       }   
     }
