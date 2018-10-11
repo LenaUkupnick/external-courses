@@ -1,3 +1,4 @@
+'use strict'
 function countElements(arr) {
     var even = 0;
     var notEven = 0;
