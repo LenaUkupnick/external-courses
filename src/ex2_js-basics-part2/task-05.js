@@ -10,5 +10,5 @@ function maxElement(arr) {
     }
     return max;
 }
-console.log (maxElement(arr));
+
 module.exports = maxElement;
