@@ -1,13 +1,15 @@
+var result;
 function typeofArguments(a) {
     if (typeof a === "number"){ 
-        return "number";
+        result = "number";
     }
     else if (typeof a === "string") {
-        return "string";
+        result = "string";
     }
         else if ( typeof a === "otherwise"){
-        return "underfined";
+        result = "underfined";
         }
+    return result;
 }
 console.log (typeofArguments(35));
 module.exports = typeofArguments;
