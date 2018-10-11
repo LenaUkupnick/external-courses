@@ -3,7 +3,8 @@ function countElements(arr) {
     var even = 0;
     var notEven = 0;
     var nulls = 0;
-        for (i = 0; i < arr.length; i++) {
+    var i = 0;
+        for (i; i < arr.length; i++) {
             if (arr[i] % 2 === 0 && arr[i] !== 0 && arr[i] !== null) {
                  even += 1;
             }
