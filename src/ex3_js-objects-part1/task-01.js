@@ -1,3 +1,4 @@
+'use strict'
 var user = {};
 user.name = "Lena";
 user.surname = "Barinova";
