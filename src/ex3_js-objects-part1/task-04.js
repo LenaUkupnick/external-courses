@@ -11,8 +11,8 @@ function addProperty(city, human) {
         if(key === city) { 
     return human; 
         } 
-    }  else     
+    }  else   {  
        human[city] = "new";
-    return human;
+    return human; }
 }
 module.exports = addProperty;
