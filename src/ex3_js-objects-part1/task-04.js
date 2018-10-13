@@ -11,12 +11,8 @@ function addProperty(city, human) {
         if(key === city) { 
     return human; 
         } 
-    } 
-    if (obj.hasOwnProperty(key)) {
-        
-    human[city] = "new"; 
-
-    return human; 
-}
+    }  else     
+       human[city] = "new";
+    return human;
 }
 module.exports = addProperty;
