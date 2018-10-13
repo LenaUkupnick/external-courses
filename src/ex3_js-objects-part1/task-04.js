@@ -12,7 +12,7 @@ function addProperty(city, human) {
     return human; 
         } 
     }
-       human[city] = "new";
+       human.city = "new";
     return human; 
 }
 module.exports = addProperty;
