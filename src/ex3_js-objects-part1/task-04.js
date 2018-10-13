@@ -1,4 +1,4 @@
-// 'use strict'
+'use strict'
 // var city = "Ryazan"; 
 // const human = { 
 //     name: "Lena", 
