@@ -14,4 +14,4 @@ function cloneTheObject (obj) {
        
     }
 }
-module.exports = cloneTheObject;
+module.exports = cloneTheObject

@@ -6,4 +6,3 @@ user.city = "Ryazan";
 user.age = "21";
 
 delete user.city;
-console.log (user);
