@@ -8,7 +8,6 @@ var key;
     function keys(human) { 
         for (key in human){
             console.log(key + ":" + human[key]);
-        }
-        module.exports = keys;
-     
+        }      
     } 
+ module.exports = keys;
