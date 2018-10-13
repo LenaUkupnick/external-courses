@@ -8,7 +8,10 @@ var clone ={};
 cloneTheObject (obj)
 function cloneTheObject (obj) {
     for (key in obj) {
-        clone[key] = obj[key];
+        if (obj.hasOwnProperty(key)){
+            clone[key] = obj[key];
+        }
+       
     }
 }
 module.exports = cloneTheObject;
