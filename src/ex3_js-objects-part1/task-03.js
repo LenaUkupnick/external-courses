@@ -12,9 +12,5 @@
             return false
         }
             return obj[name] !== undefined
-        }
-        
-        module.exports = findKeys;
-
-  
-    
+        } 
+        module.exports = findKeys;    
