@@ -1,16 +1,18 @@
-var surname = "Barinova"; 
+'use strict'
+var city = "Ryazan"; 
 const human = { 
     name: "Lena", 
     age: 21 
     }; 
-addProperty (surname,human);
-function addProperty(surname, human) { 
+var key;
+addProperty (city,human);
+function addProperty(city, human) { 
     for( key in human) { 
-        if(key === surname) { 
+        if(key === city) { 
     return human; 
         } 
     } 
-    human[surname] = "new"; 
+    human[city] = "new"; 
 
     return human; 
 }
