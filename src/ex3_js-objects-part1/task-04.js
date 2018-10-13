@@ -12,9 +12,11 @@ function addProperty(city, human) {
     return human; 
         } 
     } 
+    if (obj.hasOwnProperty(key)) {
+        
     human[city] = "new"; 
 
     return human; 
 }
-
+}
 module.exports = addProperty;
