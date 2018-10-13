@@ -11,7 +11,6 @@ function cloneTheObject (obj) {
         if (obj.hasOwnProperty(key)){
             clone[key] = obj[key];
         }
-       
     }
 }
-module.exports = cloneTheObject
+module.exports = cloneTheObject;
