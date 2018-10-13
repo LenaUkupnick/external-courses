@@ -7,12 +7,14 @@
 // var key;
 // addProperty (city,human);
 function addProperty(city, human) { 
-    for( key in human) { 
-        if(key === city) { 
-    return human; 
+    var city2 = city;
+    var human2 = human;
+        for( key in human2) { 
+        if(key === city2) { 
+    return human2; 
         } 
     }
-       human[city] = "new";
-    return human; 
+       human2[city2] = "new";
+    return human2; 
 }
 module.exports = addProperty;
