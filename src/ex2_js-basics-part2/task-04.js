@@ -1,9 +1,15 @@
-function compareElemens(array) {
-    for (i = 0; i < array.length; i++) {
-      if (array[i] !== array[0]) {
-        return false;
-      }   
+'use strict'
+var array;
+var i = 0;
+var count;
+function compareElements(array){
+  for (i; i < array.length; i++) {
+    for (count = i + 1; count < array.length; count++) {
+      if (array [i] === array[count]) {
+        return true
+      }
     }
-    return true;
   }
-  module.exports = compareElemens;
+  return false;
+}
+  module.exports = compareElements;
