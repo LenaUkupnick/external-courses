@@ -1,14 +1,15 @@
 'use strict'
-var i = 0;
 var array;
-function compareElemens(array) {
-    for (i; i < array.length; i++) {
-      if (array[i] === array[i++]) {
-        return true;
-      }   
-      if (array[i] !== array[i++]) {
-    return false;
+var i = 0;
+var count;
+function compareElements(array){
+  for (i; i < array.length; i++) {
+    for (count = i + 1; count < array.length; count++) {
+      if (array [i] === array[count]) {
+        return true
       }
+    }
   }
+  return false;
 }
-  module.exports = compareElemens;
+  module.exports = compareElements;
