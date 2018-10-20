@@ -1,4 +1,5 @@
-
+'use strict'
+var a;
 function typeofArguments(a) {
     if (typeof a === "number"){ 
         return "number";
@@ -9,5 +10,4 @@ function typeofArguments(a) {
    
     return undefined;
 }
-console.log (typeofArguments(null));
 module.exports = typeofArguments;
