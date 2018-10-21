@@ -8,7 +8,7 @@ function howManyTimes(str) {
  result = {}
     for (i; i < arr.length; i++) { 
         if (result[arr[i]] !== undefined) { 
-            result[arr[i]]++; 
+            result[arr[i]]++ ; 
         }    
         else result[arr[i]] = 1; 
         } 
