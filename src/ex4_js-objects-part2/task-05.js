@@ -7,6 +7,5 @@ function findString(str,str2) {
     } 
     else if (str === " ");
     return false;
-    ;
 }
 module.exports = findString;
