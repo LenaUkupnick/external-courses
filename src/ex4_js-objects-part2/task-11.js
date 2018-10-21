@@ -18,4 +18,4 @@ function howManyTimes(str) {
         } 
     } 
 }; 
-module.exports = howManyTimes
+module.exports = howManyTimes;
