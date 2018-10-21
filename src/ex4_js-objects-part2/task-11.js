@@ -4,7 +4,7 @@ var result = {};
 var i = 0; 
 var key;
 function howManyTimes(str) { 
- arr = str.split(''); 
+ arr = str.split(' '); 
     for (i; i < arr.length; i++) { 
         if (result[arr[i]] !== undefined) { 
             result[arr[i]]++ ; 
