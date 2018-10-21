@@ -13,7 +13,7 @@ function howManyTimes(str) {
           result[arr[i]] = 1; 
         } 
     }
-  for  (key in result) { 
+  for (key in result) { 
         if (result.hasOwnProperty(key)){ 
     console.log(key + ' - ' + result[key]); 
         } 
