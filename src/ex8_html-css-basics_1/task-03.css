@@ -1,24 +1,24 @@
-#waw {
+#second {
     border-style:dashed;
     border-color: green;
     border-width: 10pt;
 }
-#wow {
+#first {
     border-style:double;
     border-color:red;
     border-width: 10px;
 }
-#wew {
+#third {
     border-style:groove;
     border-color: blue;
     border-width:5px;
 }
-#wyw {
+#fourth{
     border-style:dotted ;
     border-color:blueviolet;
     border-width:7px;
 }
-#wuw {
+#fifth {
     border-style:ridge;
     border-color:yellow;
     border-width: 8px;
