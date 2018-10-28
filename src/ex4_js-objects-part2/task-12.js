@@ -6,5 +6,4 @@ function sumNumbers (a, b) {
     var c = a + b;
     return (+c.toFixed(3));
 }
-console.log (c);
 module.exports = sumNumbers;
