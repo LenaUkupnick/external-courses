@@ -6,6 +6,6 @@ function cutString (str,max){
         return str;
         
 }
-return str.slice(0, max - 3) + "…";
+return str.slice(0, max - 1) + "…";
 }
 module.exports = cutString;
