@@ -30,3 +30,6 @@ label{
 td, label {
   padding: 0;
 }
+table {
+  border-collapse: collapse;
+}
