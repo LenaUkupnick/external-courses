@@ -1,6 +1,6 @@
 const {task, css, html} = require('~utils')('ex8_html-css-basics', true, 'html');
 
-describe('Ex8. HTML & CSS Basics', () => {
+xdescribe('Ex8. HTML & CSS Basics', () => {
     const tasks = Array.from({length: 4}).map((_, i) => `0${i + 1}`);
 
     tasks.forEach(t =>
