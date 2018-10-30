@@ -6,7 +6,7 @@
 #second {
     border-style:dashed;
     border-color: green;
-    border-width: 10pt;
+    border-width: 10px;
 }
 #third {
     outline-style: groove;
