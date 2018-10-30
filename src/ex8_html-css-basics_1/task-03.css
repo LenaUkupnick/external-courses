@@ -1,25 +1,27 @@
+#first:hover {
+    border-style:double;
+    border-color:red;
+    border-width: 10px;
+}
 #second {
     border-style:dashed;
     border-color: green;
     border-width: 10pt;
 }
-#first {
-    border-style:double;
-    border-color:red;
-    border-width: 10px;
-}
 #third {
-    border-style:groove;
-    border-color: blue;
-    border-width:5px;
+    outline-style: groove;
+    outline-color: blue;
+    outline-width:5px;
 }
 #fourth{
-    border-style:dotted ;
-    border-color:blueviolet;
-    border-width:7px;
+    box-shadow: 0 0 0 6px rgb(210, 25, 235),
+                0 0 0 12px blue,
+                3px 0 0 12px;              
 }
 #fifth {
-    border-style:ridge;
+    border-radius:30px;
     border-color:yellow;
-    border-width: 8px;
+    border-width: 3px;
+    border: groove;   
 }
+
