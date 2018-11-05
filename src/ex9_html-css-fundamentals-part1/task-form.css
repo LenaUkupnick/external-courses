@@ -1,0 +1,78 @@
+h5 {
+    color:red;
+}
+
+h1, label {
+    font-family: Arial, sans-serif;
+}
+
+input, textarea {
+    border-radius: 5px;
+    border: 2px outset rgb(190, 187, 187);
+    padding: 7px;     
+}
+
+textarea {
+    height: 100px;
+    width: 200px;
+}
+
+.flex li {
+    display: flex;
+    align-items: center; 
+   
+}
+
+.flex > li > label,
+.flex li {
+    flex: 1 0 100px;
+    max-width: 220px;
+}
+
+.flex > li > label + * {
+    flex: 1 0 220px;
+}
+
+.input, .name {
+    margin-bottom: 15px;
+}
+
+.form-wrapper {
+    width: 600px;
+}
+
+.buttom {
+    margin-left: 50px;
+    width: 100px;
+}
+
+.redfigure {
+    width: 100px;
+    height: 25px;
+    margin-left: 360px;
+    background: #D35252;
+    position: absolute;
+    border-radius: 2px;
+    margin-top: -10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    font-size: 12px;
+    text-align: center ; 
+    line-height:25px;
+    color: antiquewhite;
+}
+  
+.redfigure::before {
+    content: "";
+    width: 0; height: 0;
+    position: absolute; right: 100%; top: calc(50% - 3px);
+    border-top: 3px solid transparent;
+    border-right: 6px solid #D35252;
+    border-bottom: 3px solid transparent;
+}
+
+input:focus + .redfigure {
+    display: block;
+  }
+  input:required:valid + .redfigure {
+    opacity: 0;
+  }
