@@ -6,15 +6,13 @@ body {
   }
   section {
     background: lightgreen;
-    width: 75%;
   }
   article {
     background: white;
     margin: 0 0 1rem 0;
   }
   aside {
-    background: pink;
-    width: 25%;
+    background: pink; 
   }
   header, article, section, .module {
     padding: 1rem;
