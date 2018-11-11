@@ -31,13 +31,16 @@ input {
 .input-text {
     position: absolute;
     color: black;
+    visibility: hidden;
     margin-left: 15px;  
     transition: 0.5s;
 }
-input:focus ~ .input-text,
+.input:focus ~ .input-text,
 .input:valid ~ .input-text
  {
+    visibility: visible;
     top: -20px;
     color: rgb(20, 103, 228);
     font-weight: bold; 
 }
+
