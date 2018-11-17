@@ -1,0 +1,13 @@
+table {
+    border: 1px solid black;
+}
+td, th {
+    border: 1px solid black;
+}
+textarea {
+    height: 130px;
+    width: 300px;
+}
+.password:focus:invalid {
+    border: 1px solid red;
+}

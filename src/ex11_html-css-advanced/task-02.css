@@ -1,0 +1,75 @@
+/* Loader на страницу */
+.container {
+    width: 300px;
+    height: 50px;
+    background: #039BE5; 
+    border-radius: 10px;
+    margin: 10px auto;
+    box-shadow: 0px 3px 15px #0D47a1;
+    overflow: hidden;
+}
+.progress-bar {
+    width: 400px;
+    height: 50px;
+    background: repeating-linear-gradient(
+        45deg, rgba(52, 105, 185, 0.9) 0,
+        rgba(43, 117, 177, 0.904) 5px,
+        transparent 5px, transparent 10px);
+    border-radius: 10px;
+    animation: loading 2s ease infinite;
+    }
+
+@keyframes loading {
+    0% {margin-left: 0;}
+    50% {opacity: 0;}
+    100% {margin-left: -100px;}
+}
+/* Мяч, прыгающий между двумя блоками */
+.ball {
+    width: 100px;
+    height: 100px;
+    background: rgb(149, 245, 5);
+    position: relative;
+    border-radius: 100px;
+    animation: bouncing 2s linear infinite alternate both;
+}
+@keyframes bouncing{
+ 0% {left: 0px; }
+ 50% {left: 240px;}
+ 100% { left: 0px; }
+}
+.block1 {
+    width: 10px;
+    height: 100px;
+    background: rgb(11, 245, 30);  
+}
+.block2 {
+    margin-left: 240px;
+    width: 10px;
+    height: 100px;
+    background: rgb(11, 245, 30);   
+}
+/* Бесконечная анимация */
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 0 auto;
+    background: radial-gradient(40% 60%, rgb(74, 224, 224), rgb(70, 70, 207));
+    animation: transformation 6s linear infinite;
+}
+@keyframes transformation {
+    0%  {border-radius: 50%; }
+    20%  {border-radius: 0;
+        background: radial-gradient(40% 60%, rgb(74, 224, 224), rgb(70, 70, 207));}
+    30% {background: radial-gradient(50% 50%, rgb(172, 238, 238), rgb(106, 106, 223));
+    transform: scale(1,1);}
+    50% {transform: scale(3, 0.5);
+        background: radial-gradient(50% 50%, rgb(172, 238, 238), rgb(106, 106, 223));}
+    70% {transform: rotate(180deg);
+        background: radial-gradient(50% 50%, rgb(172, 238, 238), rgb(106, 106, 223));}
+    80% {background: radial-gradient(40% 60%, rgb(74, 224, 224), rgb(70, 70, 207));
+        border-radius: 0;
+        transform: rotate(0deg)}
+    100% {border-radius: 50%; }
+}

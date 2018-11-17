@@ -1,0 +1,35 @@
+td{
+    width:50px;
+    height:50px;
+    border-color: black;
+    border: 1px;
+    border-style: groove; 
+    text-align:center;
+    position:relative;
+
+  }
+input {
+  position:absolute;
+  top: -300px;
+}
+input:checked::after{
+  content: "♘";
+  color: red;
+  font-size: 45px;
+  right: -5px;
+  top: 290px;
+  position: absolute;
+  text-align: center;
+}
+label{
+  width: 50px;
+  height: 50px;
+  display: block;
+  
+}
+td, label {
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+}
