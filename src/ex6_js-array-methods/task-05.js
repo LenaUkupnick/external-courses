@@ -8,4 +8,4 @@ function mapAnalogue(arr, callback) {
     }
     return result;
   };
-  module.exports = mapAnalogue;
+  module.exports = mapAnalogue; 
