@@ -16,12 +16,10 @@ h3 {
     color: beige;
 }
 .accordeon-text  { 
+    display: none;
     background: white;
     opacity: 0.9;
     border-radius: 20px; 
-}
-.close  {
-    display: none;
 }
 .active {
     display: block;
