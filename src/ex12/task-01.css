@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    background: url(https://img.fonwall.ru/o/e4/gori-trava-derevya-reka.jpg) no-repeat;
+    background-size: cover;
+}
+#accordeon{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: rgb(69, 160, 221);
+    text-align: center;
+    border-radius: 10px; 
+}
+h3 {
+    color: beige;
+}
+.accordeon-text  { 
+    background: white;
+    opacity: 0.9;
+    border-radius: 20px; 
+}
+.close  {
+    display: none;
+}
+.active {
+    display: block;
+}
+
