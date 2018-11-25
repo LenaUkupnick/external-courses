@@ -1,32 +1,26 @@
-var arr = [];
 var obj = {};
 var i = 0;
-function сhildNodes(node) {
+function childNodes(node) {
     var classList = node.classList;
     if (classList && classList.length) {
-        arr.push(classList[i]);
+        for (i = 0; i < classList.length; i++) {
+            if (obj[classList[i]] !== undefined) {
+                obj[classList[i]]++;
+            } else { obj[classList[i]] = 1; }
+        }
     }
-    if (node.nodeType === 1 || node.nodeType === 3) {
-        var child = node.firstChild;
+    if (node.nodeType === node.ELEMENT_NODE || node.nodeType === node.TEXT_NODE) {
+        var child = node.firstChild
         while (child) {
-            if (child.nodeType === 1 || child.nodeType === 3) {
-                arr.push(child.nodeName);
-                сhildNodes(child);
-            };
+            if (child.nodeType === child.ELEMENT_NODE || child.nodeType === child.TEXT_NODE) {
+                if (obj[child.nodeName] !== undefined) {
+                    obj[child.nodeName]++
+                } else { obj[child.nodeName] = 1; }
+                childNodes(child);
+            }
             child = child.nextSibling;
-        };
-    };
-};
-сhildNodes(document.body);
-function howManyTimes() {
-    for (i; i < arr.length; i++) {
-        if (obj[arr[i]] !== undefined) {
-            obj[arr[i]]++;
-        }
-        else {
-            obj[arr[i]] = 1;
         }
     }
-    console.log(obj);
 };
-howManyTimes();
+childNodes(document.body);
+console.log(obj);
