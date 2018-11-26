@@ -15,6 +15,11 @@ body {
 h3 {
     color: beige;
 }
+h3:hover {
+    height: 100%;
+    color: rgb(31, 91, 131)
+
+}
 .accordeon-text  { 
     display: none;
     background: white;
