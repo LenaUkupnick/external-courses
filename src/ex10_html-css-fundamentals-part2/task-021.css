@@ -1,0 +1,8 @@
+table {
+    border: 1px solid white;
+    text-transform: lowercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tr-lightblue:hover, .tr-blue:hover {
+    background: #E1E6E9;
+}
