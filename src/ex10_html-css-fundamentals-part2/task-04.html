@@ -1,108 +1,92 @@
 <!DOCTYPE html>
-<html lang="RU">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Task</title>
+    <title>Maket</title>
     <link rel="stylesheet" href="task-04.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <div class="header">
-        <ul class="header-menu">
-            <li><a href="#" class="header-menu-item">Help Center</a></li>
-            <li><a href="#" class="header-menu-item">Our Support</a></li>
-            <li><a href="#" class="header-menu-item">John Doe</a></li>
-        </ul>
-    </div>
-    <div class="content">
-        <div class="content-button">
-            <button class="content-button-add" type="submit">
-                <span class="content-button-add-books">+ ADD A BOOK</span>
-            </button>
+        <label class="burger-menu" for="showmenu">&#9776;</label>
+        <div class="header-title">
+            <div class="logo"></div>
+            <ul class="header-icons-content">
+                <li class="img-items"><a href="#"><img src="images/ico-phone.png" alt="" class="icon"></a></li>
+                <li class="img-items"><a href="#"><img id="geo" src="images/ico-geo.png" alt="" class="icon"></li>
+                <li class="img-items"><a href="#"><img src="images/ico-email.png" alt="" class="email"></a></li>
+            </ul>
         </div>
-        <div class="content-menu">
-            <a class="content-menu-item" href="#">
-                <i class="fa fa-book fa-1x"></i>
-                <span class="content-menu-item-text">Now reading</span>
-            </a>
-            <a class="content-menu-item" href="#">
-                <i class="fa fa-globe fa-1x"></i>
-                <span class="content-menu-item-text">Browse</span>
-            </a>
-            <a class="content-menu-item" href="#">
-                <i class="fa fa-shopping-cart fa-1x"></i>
-                <span class="content-menu-item-text">Buy books</span>
-            </a>
-            <a class="content-menu-item" href="#">
-                <i class="fa fa-star fa-1x"></i>
-                <span class="content-menu-item-text">Favourite Books</span>
-            </a>
-            <a class="content-menu-item" href="#">
-                <i class="fa fa-th-list fa-1x"></i>
-                <span class="content-menu-item-text">Wishlist</span>
-            </a>
-            <a class="content-menu-item" href="#">
-                <i class="fa fa-clock-o fa-1x"></i>
-                <span class="content-menu-item-text">History</span>
-            </a>
-        </div>
-        <div class="content-menu">
-            <a class="content-menu-item" href="#">
-                <span class="content-menu-item-text"><span class="text-marker" id="red-marker">&bull;</span>Must Read
-                    Titles </span>
-            </a>
-            <a class="content-menu-item" href="#">
-                <span class="content-menu-item-text"><span class="text-marker" id="gold-marker">&bull;</span>Best Of
-                    List</span>
-            </a>
-            <a class="content-menu-item" href="#">
-                <span class="content-menu-item-text"><span class="text-marker" id="blue-marker">&bull;</span>Classic
-                    Novels</span>
-            </a>
-            <a class="content-menu-item" href="#">
-                <span class="content-menu-item-text"><span class="text-marker" id="purpur-marker">&bull;</span>Non
-                    Fiction</span>
-            </a>
-        </div>
-        <div class="content-list">
-            <div class="content-list-item">
-                <i class="fa fa-clock-o fa-1x"></i>
-                <span class="content-list-item-text">
-                    You added
-                    <span class="content-list-item-bold-text">Fight Club</span>
-                    by
-                    <span class="content-list-item-bold-text">Chuck Palahniuk</span>
-                    to your
-                    <span class="content-list-item-bold-text">Must Read Titles</span>
-                </span>
+        <div class="header-menu">
+            <div class="header-content-menu">
+                <ul>
+                    <li class="item-menu"><a href="#" class="menu-link">HOME</a></li>
+                    <li class="item-menu"><a href="#" class="menu-link">What about ISAMA</a></li>
+                    <li class="item-menu"><a href="#" class="menu-link">What we do?</a></li>
+                    <li class="item-menu"><a href="#" class="menu-link">Our Projects</a></li>
+                    <li class="item-menu"><a href="#" class="menu-link">Exellent Team</a></li>
+                    <li class="item-menu"><a href="#" class="menu-link">Contact</a></li>
+                </ul>
+                <div class="search">
+                    <img src="images/ico-search.png" alt="search" class="icon-search">
+                    <input type="text" placeholder=" Type your search words">
+                </div>
             </div>
-            <span class="timer">24 minutes ago</span>
-            <div class="content-list-item">
-                <i class="fa fa-clock-o fa-1x"></i>
-                <span class="content-list-item-text">
-                    You added
-                    <span class="content-list-item-bold-text">The Trial</span>
-                    by
-                    <span class="content-list-item-bold-text">Franz Cafka</span>
-                    to your
-                    <span class="content-list-item-bold-text">Must Read Titles</span>
-                </span>
-            </div>
-            <span class="timer">48 minutes ago</span>
         </div>
     </div>
-    <div class="footer">
-        <div class="footer-menu">
-            <a class="footer-menu-item" href="#">
-                <i id ="question-circle"  class="fa fa-question-circle fa-1x"></i>
-            </a>
-            <a class="footer-menu-item" href="#">
-                <i id ="cog" class="fa fa-cog fa-1x"></i>
-            </a>
+    <div class="main-picture">
+        <div class="main-heading">
+            <h1 class="main-title">Let's draw some arts</h1>
+            <p class="title"><span id="ampersand">&</span>make your business much better</p>
+        </div>
+        <div class="sliders">
+            <div class="slider1">
+                <img src="images/slide-1.jpg" alt="" class="green">
+                <div class="like"> Like</div>
+            </div>
+            <div class="slider2">
+                <img src="images/slide-2.jpg" alt="" class="phone">
+                <div class="like">Like</div>
+            </div>
+            <div class="slider3">
+                <img src="images/arrow-right.png" alt="" class="to-right">
+            </div>
+        </div>
+    </div>
+    <div class="articles">
+        <div class="article-content">
+            <div class="article-content-item">
+                <img src="images/lamp.png" alt="" class="lamp">
+                <div class="article-item-text">
+                    <h2> What about ISAMA</h2>
+                    <p>ISAMA is a marketing foundation located in Riyadh built on the talent of creation that leads to
+                        a modern concept of
+                        professionalism. At ISAMA we believe even if you are good at what you do, you have a great
+                        product
+                        or you provide an excellent service. We still can present you a little better to the world,
+                        creating your full
+                        identity, provides you with your marketing plans, design your website, print your publications,
+                        design your logo’s and
+                        offices. Simply we give your business the perfect image.
+                    </p>
+                </div>
+            </div>
+            <div class="article-content-item">
+                <img src="images/tree.png" alt="" class="tree">
+                <div class="article-item-text">
+                    <h2>Why we exist</h2>
+                    <p>Reaching customer satisfaction through providing them with cutting-edge technologies that give
+                        clients access to a wide range of tools, ensuring efficient and results-oriented communication
+                        solutions, which grant
+                        them a special character that distinguishes them from the others in the business.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
