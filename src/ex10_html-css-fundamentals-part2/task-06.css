@@ -74,6 +74,7 @@ ul  {
     position: absolute;
     left: 35%;
     visibility: hidden;
+    top: 25px;
 }
 .item-menu:hover .menu-link:after {
     visibility: visible;
@@ -236,6 +237,9 @@ h2{
         background-repeat: no-repeat;
         margin-left: 170px;
     }
+    .search {
+        left: -50px;
+    }
     .main-picture {
         background-image: url(images/plan-main.png);
         position: relative;
@@ -257,16 +261,16 @@ h2{
    .header-content-menu {
        border: none;
    }
-    .header {
-        margin: auto;
-        display: flex;
-        width:60%;
-        justify-content: space-around;        
+    .header{
+    display: flex;
+    justify-content: space-evenly;       
 }
     .burger-menu {
         display: block;
-        font-size: 34px;
-        color:rgb(63, 121, 160);
+        position: absolute;
+        left: 30px; 
+        font-size: 34px; 
+        color:rgb(63, 121, 160); 
     }
       
 }
