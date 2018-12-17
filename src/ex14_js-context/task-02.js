@@ -1,4 +1,3 @@
-var hangman = new Hangman('webpurple');
 function Hangman(input) {
     this.guess = function (letter) {
         var position = this.input.indexOf(letter);
@@ -17,9 +16,7 @@ function Hangman(input) {
             this.numberOfErrors = this.numberOfErrors - 1;
             this.errorSymbols.push(letter);
             this.message = 'wrong letter,  errors left: ' + this.numberOfErrors + ' | ' + this.errorSymbols;
-            if(this.numberOfErrors === 0) {
-                console.log('Oops, attempts ended :(');
-            }
+            console.log (this.message);
         }
         console.log(this.message);
         return this;
@@ -49,15 +46,4 @@ function Hangman(input) {
     }
     this.startAgain(input);
 }
- hangman.guess('w'); // "w________"
- hangman.guess('e'); // "we______e"
- hangman.guess('a'); // "wrong letter, errors left 5 | a"
- hangman.guess('k'); // "we_p__p_e"
- hangman.guess('n'); // "wrong letter, errors left 4 | a,k"
- hangman.guess('p') // "webp___p_e"
-   .guess('c') // "webp__ple"
-   .getErrorsLeft() // 4
-   .getWrongSymbols() // [a,k]
-   .guess('q') // "webpu_ple"
-   .guess('x'); // "webpurple | You won!"
 module.exports = new Hangman; 
